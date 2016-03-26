@@ -15,12 +15,7 @@ namespace Biblioteca.Web
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        public List<UsuarioBE> getAllUsuario() 
-        {
-            return usuarioBC.ListarUsuarios();
+            
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -32,9 +27,24 @@ namespace Biblioteca.Web
                 Direccion = txtDireccion.Text,
                 Telefono = txtTelefono.Text,
                 Dni = txtDni.Text
-            };
+            };           
 
             usuarioBC.InsertarUsuario(usuario);
+            lvUsuario.DataBind();
+        }
+
+        public List<UsuarioBE> getAllUsuario() 
+        {
+            return usuarioBC.ListarUsuarios();
+        }        
+
+        protected void btnEliminar_Click(object sender, EventArgs e) 
+        {            
+            Button btn = (Button)sender;
+            if (btn.CommandName == "Eliminar")            
+            {
+                txtNombre.Text = btn.CommandArgument;
+            }
         }
     }
 }

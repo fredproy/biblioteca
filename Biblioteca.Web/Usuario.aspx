@@ -44,17 +44,17 @@
     <br />
 
     <!-- Inicio del listview -->    
-        <asp:ListView runat="server" ID="gvUsuario" ItemType="Biblioteca.BE.UsuarioBE" SelectMethod="getAllUsuario">
+        <asp:ListView runat="server" ID="lvUsuario" ItemType="Biblioteca.BE.UsuarioBE" SelectMethod="getAllUsuario">
             <LayoutTemplate>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <td>ID</td>
                             <td>Nombres</td> 
                             <td>Apellidos</td>
                             <td>Direccion</td>
                             <td>Telefono</td>
                             <td>Dni</td>
+                            <td colspan="2">Acciones</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -64,16 +64,20 @@
             </LayoutTemplate>
             <ItemTemplate>
                 <tr>
-                    <td><%# Item.IdUsuario %></td>
                     <td><%# Item.Nombre %></td>
                     <td><%# Item.Apellido %></td>
                     <td><%# Item.Direccion %></td>
                     <td><%# Item.Telefono %></td>
                     <td><%# Item.Dni %></td>
+                    <td>
+                        <asp:Button runat="server" Text="Eliminar" CssClass="btn btn-default" CommandArgument="<%# Item.IdUsuario %>" CommandName="Eliminar" OnClick="btnEliminar_Click" />
+                    </td>
                 </tr>
             </ItemTemplate>
         </asp:ListView>
     
     <!-- fin del listview -->
+
+    
     
 </asp:Content>
