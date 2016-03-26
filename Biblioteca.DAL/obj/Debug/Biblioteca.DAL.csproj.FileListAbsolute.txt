@@ -1,0 +1,7 @@
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\bin\Debug\Biblioteca.DAL.dll
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\bin\Debug\Biblioteca.DAL.pdb
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\bin\Debug\Biblioteca.BE.dll
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\bin\Debug\Biblioteca.BE.pdb
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\obj\Debug\Biblioteca.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\obj\Debug\Biblioteca.DAL.dll
+C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.DAL\obj\Debug\Biblioteca.DAL.pdb

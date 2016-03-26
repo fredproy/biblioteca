@@ -10,12 +10,25 @@ namespace Biblioteca.DAL
 {
     public class Conexion
     {
-        //private ConnectionStringSettings cnx = null;
-        public Conexion() {
-            /*var cnx = new SqlConnection(ConfigurationManager.ConnectionStrings["DbConexion"].ConnectionString);
-            var sql = "Select IdUsuario, Nombre, Apellido, Direccion, Telefono, Dni From USUARIO";
-            var cmd = new SqlCommand(sql,cnx);*/
+        public SqlConnection cnx;
+        public SqlCommand cmd;
+        public SqlDataReader rs;
 
+        public Conexion()
+        { 
+        }
+
+        public string GetConex() 
+        {
+            string cnx = ConfigurationManager.ConnectionStrings["DbConexion"].ConnectionString;
+            if (Object.ReferenceEquals(cnx, String.Empty))
+            {
+                return string.Empty;
+            }
+            else 
+            {
+                return cnx;
+            }
         }
     }
 }

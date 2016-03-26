@@ -13,33 +13,37 @@ using Biblioteca.BE;
 namespace Biblioteca.DAL
 {
     public class UsuarioDAL
-    {      
+    {
+        SqlConnection cnx;
 
-        public UsuarioDAL() {            
-            
+        public UsuarioDAL() {
+            cnx = new SqlConnection(ConfigurationManager.ConnectionStrings["DbConexion"].ConnectionString);
         }
 
         public List<UsuarioBE> ListarUsuarios()
         {
+            cnx.Open();
             var lista = new List<UsuarioBE>();
-            var cnx = new SqlConnection(ConfigurationManager.ConnectionStrings["DbConexion"].ConnectionString);
             var sql = "Select IdUsuario, Nombre, Apellido, Direccion, Telefono, Dni From USUARIO";
-            SqlCommand cmd = new SqlCommand(sql);
+            SqlCommand cmd = new SqlCommand(sql, cnx);
+
+            
 
             SqlDataReader reader = cmd.ExecuteReader();
-            while(reader.Read()){
-                lista.Add(reader.GetString(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),);
+            if (reader.HasRows)
+	        {
+                while(reader.Read()){
+                    lista.Add(new UsuarioBE(reader.GetInt32(0),reader.GetString(1),reader.GetString(2),reader.GetString(3),reader.GetString(4),reader.GetString(5)));
+                }
+	        }else{
+                Console.WriteLine("No has registros");
             }
 
-
-            cnx.Open();
-            cmd.ExecuteNonQuery();
-            cnx.Close();
-
+            reader.Close();
             return lista;
         }
 
-        public Boolean InsertarUsuario(UsuarioBE usuario)
+        /*public Boolean InsertarUsuario(UsuarioBE usuario)
         {
             Boolean bandera = true;
             var cnx = new SqlConnection(ConfigurationManager.ConnectionStrings["DbConexion"].ConnectionString);
@@ -49,6 +53,6 @@ namespace Biblioteca.DAL
             cmd.ExecuteNonQuery();
             cnx.Close();
             return bandera;
-        }
+        }*/
     }
 }

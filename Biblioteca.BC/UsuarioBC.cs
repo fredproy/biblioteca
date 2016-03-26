@@ -16,10 +16,5 @@ namespace Biblioteca.BC
         {
             return usuarioDAL.ListarUsuarios();
         }
-
-        public Boolean InsertarUsuario(UsuarioBE usuario)
-        {
-            
-        }
     }
 }

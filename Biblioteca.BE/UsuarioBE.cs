@@ -18,9 +18,8 @@ namespace Biblioteca.BE
             this.Dni = Dni;
         }
 
-        public UsuarioBE(int IdUsuario, String Nombre, String Apellido, String Direccion, String Telefono, String Dni)
+        public UsuarioBE( String Nombre, String Apellido, String Direccion, String Telefono, String Dni)
         {
-            this.IdUsuario = IdUsuario;
             this.Nombre = Nombre;
             this.Apellido = Apellido;
             this.Direccion = Direccion;
