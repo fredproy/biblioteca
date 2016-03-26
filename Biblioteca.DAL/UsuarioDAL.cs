@@ -43,16 +43,13 @@ namespace Biblioteca.DAL
             return lista;
         }
 
-        /*public Boolean InsertarUsuario(UsuarioBE usuario)
+        public void InsertarUsuario(UsuarioBE usuario)
         {
-            Boolean bandera = true;
-            var cnx = new SqlConnection(ConfigurationManager.ConnectionStrings["DbConexion"].ConnectionString);
-            var sql = "Insert Into Usuario(Nombre, Apellido, Direccion, Telefono) VALUES("+usuario.Nombre+","+usuario.Apellido+","+usuario.Direccion+","+usuario.Telefono+")";
-            var cmd = new SqlCommand(sql, cnx);
             cnx.Open();
+            var sql = "Insert Into USUARIO(Nombre, Apellido, Direccion, Telefono, Dni) VALUES('"+usuario.Nombre+"','"+usuario.Apellido+"','"+usuario.Direccion+"','"+usuario.Telefono+"','"+usuario.Dni+"')";
+            var cmd = new SqlCommand(sql, cnx);
             cmd.ExecuteNonQuery();
-            cnx.Close();
-            return bandera;
-        }*/
+            cnx.Close();     
+        }
     }
 }

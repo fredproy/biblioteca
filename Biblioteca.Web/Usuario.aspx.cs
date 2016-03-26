@@ -22,5 +22,19 @@ namespace Biblioteca.Web
         {
             return usuarioBC.ListarUsuarios();
         }
+
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            UsuarioBE usuario = new UsuarioBE() 
+            {
+                Nombre = txtNombre.Text,
+                Apellido = txtApellido.Text,
+                Direccion = txtDireccion.Text,
+                Telefono = txtTelefono.Text,
+                Dni = txtDni.Text
+            };
+
+            usuarioBC.InsertarUsuario(usuario);
+        }
     }
 }
