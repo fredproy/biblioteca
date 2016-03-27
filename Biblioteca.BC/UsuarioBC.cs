@@ -21,5 +21,10 @@ namespace Biblioteca.BC
         {
             usuarioDAL.InsertarUsuario(usuario);
         }
+
+        public void EliminarUsuario(int id) 
+        {
+            usuarioDAL.EliminarUsuario(id);
+        }
     }
 }

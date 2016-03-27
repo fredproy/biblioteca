@@ -49,7 +49,23 @@ namespace Biblioteca.DAL
             var sql = "Insert Into USUARIO(Nombre, Apellido, Direccion, Telefono, Dni) VALUES('"+usuario.Nombre+"','"+usuario.Apellido+"','"+usuario.Direccion+"','"+usuario.Telefono+"','"+usuario.Dni+"')";
             var cmd = new SqlCommand(sql, cnx);
             cmd.ExecuteNonQuery();
-            cnx.Close();     
+            cnx.Close();
+        }
+
+        public void EliminarUsuario(int id)
+        {
+            cnx.Open();
+            var sql = "Delete From USUARIO Where IdUsuario=" + id;
+            var cmd = new SqlCommand(sql,cnx);
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            cnx.Close();
         }
     }
 }
