@@ -76,8 +76,6 @@
             </ItemTemplate>
         </asp:ListView>
     
-    <!-- fin del listview -->
-
-    
+    <!-- fin del listview -->    
     
 </asp:Content>

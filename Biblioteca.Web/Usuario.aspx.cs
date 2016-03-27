@@ -39,9 +39,9 @@ namespace Biblioteca.Web
         }        
 
         protected void btnEliminar_Click(object sender, EventArgs e) 
-        {            
+        {
             Button btn = (Button)sender;
-            if (btn.CommandName == "Eliminar")            
+            if (btn.CommandName == "Eliminar")
             {
                 txtNombre.Text = btn.CommandArgument;
             }
