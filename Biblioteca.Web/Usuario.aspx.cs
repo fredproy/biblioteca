@@ -43,11 +43,7 @@ namespace Biblioteca.Web
             Button btn = (Button)sender;
             if (btn.CommandName == "Eliminar")
             {
-                //txtNombre.Text = btn.CommandArgument;
-                var id = Int32.Parse(btn.CommandArgument);
-                usuarioBC.EliminarUsuario(id);
-                lvUsuario.DataBind();
-
+                txtNombre.Text = btn.CommandArgument;
             }
         }
     }

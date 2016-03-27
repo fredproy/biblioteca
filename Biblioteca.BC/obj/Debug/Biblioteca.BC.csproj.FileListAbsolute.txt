@@ -7,3 +7,12 @@ C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BC\b
 C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BC\obj\Debug\Biblioteca.BC.csprojResolveAssemblyReference.cache
 C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BC\obj\Debug\Biblioteca.BC.dll
 C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BC\obj\Debug\Biblioteca.BC.pdb
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\bin\Debug\Biblioteca.BC.dll
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\bin\Debug\Biblioteca.BC.pdb
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\bin\Debug\Biblioteca.BE.dll
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\bin\Debug\Biblioteca.DAL.dll
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\bin\Debug\Biblioteca.BE.pdb
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\bin\Debug\Biblioteca.DAL.pdb
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\obj\Debug\Biblioteca.BC.csprojResolveAssemblyReference.cache
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\obj\Debug\Biblioteca.BC.dll
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BC\obj\Debug\Biblioteca.BC.pdb

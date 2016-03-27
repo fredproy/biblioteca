@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion.cs" />
     <Compile Include="LibroDAL.cs" />
     <Compile Include="PrestamoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

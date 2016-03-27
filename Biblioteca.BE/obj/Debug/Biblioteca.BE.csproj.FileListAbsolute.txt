@@ -3,3 +3,8 @@ C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BE\b
 C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BE\obj\Debug\Biblioteca.BE.csprojResolveAssemblyReference.cache
 C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BE\obj\Debug\Biblioteca.BE.dll
 C:\Users\Freddy\documents\visual studio 2013\Projects\Biblioteca\Biblioteca.BE\obj\Debug\Biblioteca.BE.pdb
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BE\bin\Debug\Biblioteca.BE.dll
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BE\bin\Debug\Biblioteca.BE.pdb
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BE\obj\Debug\Biblioteca.BE.csprojResolveAssemblyReference.cache
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BE\obj\Debug\Biblioteca.BE.dll
+C:\Users\Shoner\Desktop\biblioteca\Biblioteca.BE\obj\Debug\Biblioteca.BE.pdb
